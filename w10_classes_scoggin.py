@@ -1,10 +1,4 @@
-"""
-Name: Shawn Scoggin
-Course: ICT 4370-1
-Date: 6/05/2022
-Week 10 - Stock Earnings with GUI and Yahoo Finance API
-This program will create a report calculating investor stock earnings or losses
-"""
+
 
 #import classes
 from datetime import date, datetime, timedelta
