@@ -29,8 +29,8 @@ class StockShares:
         return lastBusinessDaytoString
 
     def businessDatePrice(self):
-        endDate2 = self.lastBusinessDay + timedelta(days=1)
-        businessDayPrice = self.yahooStockInfo.history(start=self.lastBusinessDay, end=endDate2)
+        startDate2 = self.lastBusinessDay - timedelta(days=1)
+        businessDayPrice = self.yahooStockInfo.history(start=startDate2, end=self.lastBusinessDay)
         self.businessDayPrice = businessDayPrice['Close'].iloc[-1]
         return self.businessDayPrice
 
